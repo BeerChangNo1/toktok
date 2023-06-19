@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 import 'package:toktok/addon/appbar_global.dart';
 import 'package:toktok/addon/newest.widget.dart';
-import 'package:toktok/addon/style.dart';
-import 'package:toktok/screen/login.dart';
+// import 'package:toktok/addon/style.dart';
+// import 'package:toktok/screen/login.dart';
 
 import '../addon/categories.dart';
 import '../addon/poppular.widget.dart';

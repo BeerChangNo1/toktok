@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:toktok/addon/style.dart';
 import 'package:toktok/screen/hompage.dart';
-import 'package:toktok/screen/login.dart';
-// หน้า splash ค้าบ
+// import 'package:toktok/screen/login.dart';
+
 class splash_view extends StatelessWidget {
   const splash_view({super.key});
 

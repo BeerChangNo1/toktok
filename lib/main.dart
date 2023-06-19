@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:toktok/screen/hompage.dart';
+// import 'package:toktok/screen/hompage.dart';
 import 'package:toktok/screen/login.dart';
 import 'package:toktok/screen/splash_view.dart';
 

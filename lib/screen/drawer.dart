@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:toktok/addon/style.dart';
+// import 'package:toktok/addon/style.dart';
 
 class drawer extends StatelessWidget {
   const drawer({super.key});
