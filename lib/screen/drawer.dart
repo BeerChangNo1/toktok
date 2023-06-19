@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 // import 'package:toktok/addon/style.dart';
 
 class drawer extends StatelessWidget {
@@ -35,7 +36,10 @@ class drawer extends StatelessWidget {
                       'assets/images/facebook.svg',
                     )),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    navigator!.pop();
+                    navigator?.pushNamed('/homepage');
+                  },
                   leading: const Icon(
                     Icons.home_rounded,
                     color: Colors.red,
@@ -57,7 +61,11 @@ class drawer extends StatelessWidget {
                   ),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    navigator!.pop();
+
+                    navigator?.pushNamed('/cartpage');
+                  },
                   leading: const Icon(
                     Icons.shopping_cart_outlined,
                     color: Colors.red,

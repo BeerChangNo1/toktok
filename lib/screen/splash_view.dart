@@ -3,7 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:toktok/addon/style.dart';
+import 'package:toktok/screen/cartpage.dart';
 import 'package:toktok/screen/hompage.dart';
+
 // import 'package:toktok/screen/login.dart';
 //ควยถอก
 class splash_view extends StatelessWidget {
@@ -13,7 +15,7 @@ class splash_view extends StatelessWidget {
   Widget build(BuildContext context) {
     //todo ตั้งแวลาหน่วงก่อนไปหน้าถัดไป
     Timer(const Duration(seconds: 1), () {
-      Get.to(const homepage());
+      Get.to(const cartpage());
     });
 
     //todo return Scaffold

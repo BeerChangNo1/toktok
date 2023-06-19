@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:toktok/screen/cartpage.dart';
+import 'package:toktok/screen/hompage.dart';
 // import 'package:toktok/screen/hompage.dart';
 import 'package:toktok/screen/login.dart';
 import 'package:toktok/screen/splash_view.dart';
@@ -19,8 +21,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: homepage(),
       routes: {
-        "/": (context) => splash_view(),
-        "/loginpage": (context) => loginpage()
+        "/": (context) => homepage(),
+        "/homepage": (context) => homepage(),
+        "/loginpage": (context) => loginpage(),
+        "/cartpage": (context) => cartpage(),
       },
     );
   }

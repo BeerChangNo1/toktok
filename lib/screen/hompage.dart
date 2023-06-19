@@ -71,7 +71,7 @@ class _homepageState extends State<homepage> {
                       ),
                       Container(
                         height: 50,
-                        width: 300,
+                        width: 250,
                         child: const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 15),
                           child: TextField(
