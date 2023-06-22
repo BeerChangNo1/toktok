@@ -1,6 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:get/get.dart';
 import 'package:toktok/addon/images.network.dart';
 
 class newest extends StatelessWidget {
@@ -35,7 +38,10 @@ class newest extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          navigator!.pushNamed('/itempage');
+                          log('inkwell');
+                        },
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
