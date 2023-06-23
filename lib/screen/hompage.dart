@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:get/get.dart';
 // import 'package:get/get.dart';
 import 'package:toktok/addon/appbar_global.dart';
 import 'package:toktok/addon/newest.widget.dart';
@@ -127,7 +128,10 @@ class _homepageState extends State<homepage> {
           // color: Colors.white,
           child: FloatingActionButton(
             backgroundColor: Colors.white,
-            onPressed: () {},
+            onPressed: () {
+              navigator!.pop();
+              navigator!.pushNamed('/cartpage');
+            },
             child: Icon(
               CupertinoIcons.cart,
               color: Colors.red,
