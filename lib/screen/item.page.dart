@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
@@ -25,7 +23,7 @@ class itempage extends StatelessWidget {
       rtlOpening: false,
       // openScale: 1.0,
       disabledGestures: false,
-      drawer: const drawer(),
+      drawer: drawer(),
       child: Scaffold(
         body: Padding(
           padding: EdgeInsets.only(top: 5),

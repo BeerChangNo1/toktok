@@ -1,12 +1,15 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
+import '../addon/images.network.dart';
 // import 'package:toktok/addon/style.dart';
 
 class drawer extends StatelessWidget {
-  const drawer({super.key});
-
+  drawer({super.key});
+  final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -32,9 +35,40 @@ class drawer extends StatelessWidget {
                       color: Colors.black26,
                       shape: BoxShape.circle,
                     ),
-                    child: SvgPicture.asset(
-                      'assets/images/facebook.svg',
-                    )),
+                    child: Image.network(image_network().berger)),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(
+                    Icons.home_rounded,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    auth.currentUser!.uid.toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(
+                    Icons.home_rounded,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    auth.currentUser!.email.toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(
+                    Icons.home_rounded,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    auth.currentUser!.phoneNumber.toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
                 ListTile(
                   onTap: () {
                     navigator!.pop();
@@ -98,7 +132,10 @@ class drawer extends StatelessWidget {
                   ),
                 ),
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    navigator!.pop();
+                    navigator!.pushNamed("/");
+                  },
                   leading: const Icon(
                     Icons.logout,
                     color: Colors.red,

@@ -35,7 +35,7 @@ class _homepageState extends State<homepage> {
       rtlOpening: false,
       // openScale: 1.0,
       disabledGestures: false,
-      drawer: const drawer(),
+      drawer: drawer(),
       child: Scaffold(
         body: ListView(
           children: [

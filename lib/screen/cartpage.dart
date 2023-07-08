@@ -28,7 +28,7 @@ class _cartpageState extends State<cartpage> {
       rtlOpening: false,
       // openScale: 1.0,
       disabledGestures: false,
-      drawer: const drawer(),
+      drawer: drawer(),
       child: Scaffold(
           body: ListView(
             children: [
