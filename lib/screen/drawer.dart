@@ -5,11 +5,14 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 import '../addon/images.network.dart';
+import '../authentication/authen.dart';
 // import 'package:toktok/addon/style.dart';
 
 class drawer extends StatelessWidget {
   drawer({super.key});
   final auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final AuthenticationService _authService = AuthenticationService();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,40 +38,7 @@ class drawer extends StatelessWidget {
                       color: Colors.black26,
                       shape: BoxShape.circle,
                     ),
-                    child: Image.network(image_network().berger)),
-                ListTile(
-                  onTap: () {},
-                  leading: const Icon(
-                    Icons.home_rounded,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    auth.currentUser!.uid.toString(),
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                ListTile(
-                  onTap: () {},
-                  leading: const Icon(
-                    Icons.home_rounded,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    auth.currentUser!.email.toString(),
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                ListTile(
-                  onTap: () {},
-                  leading: const Icon(
-                    Icons.home_rounded,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    auth.currentUser!.phoneNumber.toString(),
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
+                    child: Image.network(image_network().snack)),
                 ListTile(
                   onTap: () {
                     navigator!.pop();
@@ -132,9 +102,17 @@ class drawer extends StatelessWidget {
                   ),
                 ),
                 ListTile(
-                  onTap: () {
-                    navigator!.pop();
-                    navigator!.pushNamed("/");
+                  onTap: () async {
+                    try {
+                      _authService.logout();
+                      await _auth.signOut();
+                      navigator!.pop();
+                      navigator!.pushNamed("/loginpage");
+                      // ทำงานอื่นๆที่คุณต้องการหลังจากออกจากระบบ
+                    } catch (e) {
+                      // จัดการข้อผิดพลาดในการออกจากระบบ
+                      print('เกิดข้อผิดพลาดในการออกจากระบบ: $e');
+                    }
                   },
                   leading: const Icon(
                     Icons.logout,

@@ -40,12 +40,12 @@ class newest extends StatelessWidget {
                       InkWell(
                         onTap: () {
                           navigator!.pushNamed('/itempage');
-                          log('inkwell');
+                          // log('inkwell' + navigator.toString());
                         },
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
-                            image_network().berger,
+                            image_network().noodles,
                             height: 130,
                             // width: 50,
                           ),
@@ -139,7 +139,7 @@ class newest extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
-                            'https://www.pngall.com/wp-content/uploads/2016/05/Pizza.png',
+                            image_network().meatball,
                             height: 130,
                             // width: 50,
                           ),
@@ -233,7 +233,7 @@ class newest extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
-                            image_network().tarco,
+                            image_network().cha_nom,
                             height: 130,
                             // width: 50,
                           ),
@@ -327,7 +327,7 @@ class newest extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
-                            image_network().cola,
+                            image_network().noodles,
                             height: 130,
                             // width: 50,
                           ),
@@ -421,7 +421,7 @@ class newest extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           child: Image.network(
-                            image_network().berger,
+                            image_network().ice_creme,
                             height: 130,
                             // width: 50,
                           ),
@@ -489,100 +489,100 @@ class newest extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 10),
-              child: Container(
-                width: 430,
-                height: 150,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 3,
-                        blurRadius: 10,
-                        offset: Offset(0, 3))
-                  ],
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      InkWell(
-                        onTap: () {},
-                        child: Container(
-                          alignment: Alignment.center,
-                          child: Image.network(
-                            image_network().hotdog,
-                            height: 130,
-                            // width: 50,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        width: 190,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            const Text(
-                              'Hot Hotdog',
-                              style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
-                            ),
-                            const Text(
-                              'Taste Our Hot Pizza, We Provide Our Great Foods',
-                              style: TextStyle(
-                                fontSize: 16, /* fontWeight: FontWeight.bold */
-                              ),
-                            ),
-                            RatingBar.builder(
-                              itemCount: 5,
-                              itemSize: 18,
-                              initialRating: 4,
-                              minRating: 1,
-                              direction: Axis.horizontal,
-                              itemBuilder: (context, index) => const Icon(
-                                Icons.star,
-                                color: Colors.red,
-                              ),
-                              onRatingUpdate: (index) {},
-                            ),
-                            const Text(
-                              '\$10',
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(vertical: 10),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Icon(
-                              Icons.favorite_border,
-                              color: Colors.red,
-                              size: 26,
-                            ),
-                            Icon(
-                              CupertinoIcons.cart,
-                              color: Colors.red,
-                              size: 26,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: EdgeInsets.symmetric(vertical: 10),
+            //   child: Container(
+            //     width: 430,
+            //     height: 150,
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(10),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.grey.withOpacity(0.5),
+            //             spreadRadius: 3,
+            //             blurRadius: 10,
+            //             offset: Offset(0, 3))
+            //       ],
+            //     ),
+            //     child: Padding(
+            //       padding: const EdgeInsets.all(8.0),
+            //       child: Row(
+            //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //         children: [
+            //           // InkWell(
+            //           //   onTap: () {},
+            //           //   child: Container(
+            //           //     alignment: Alignment.center,
+            //           //     child: Image.network(
+            //           //       image_network().hotdog,
+            //           //       height: 130,
+            //           //       // width: 50,
+            //           //     ),
+            //           //   ),
+            //           // ),
+            //           Container(
+            //             width: 190,
+            //             child: Column(
+            //               crossAxisAlignment: CrossAxisAlignment.start,
+            //               mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //               children: [
+            //                 const Text(
+            //                   'Hot Hotdog',
+            //                   style: TextStyle(
+            //                       fontSize: 22, fontWeight: FontWeight.bold),
+            //                 ),
+            //                 const Text(
+            //                   'Taste Our Hot Pizza, We Provide Our Great Foods',
+            //                   style: TextStyle(
+            //                     fontSize: 16, /* fontWeight: FontWeight.bold */
+            //                   ),
+            //                 ),
+            //                 RatingBar.builder(
+            //                   itemCount: 5,
+            //                   itemSize: 18,
+            //                   initialRating: 4,
+            //                   minRating: 1,
+            //                   direction: Axis.horizontal,
+            //                   itemBuilder: (context, index) => const Icon(
+            //                     Icons.star,
+            //                     color: Colors.red,
+            //                   ),
+            //                   onRatingUpdate: (index) {},
+            //                 ),
+            //                 const Text(
+            //                   '\$10',
+            //                   style: TextStyle(
+            //                       fontSize: 20,
+            //                       fontWeight: FontWeight.bold,
+            //                       color: Colors.red),
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //           const Padding(
+            //             padding: EdgeInsets.symmetric(vertical: 10),
+            //             child: Column(
+            //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //               children: [
+            //                 Icon(
+            //                   Icons.favorite_border,
+            //                   color: Colors.red,
+            //                   size: 26,
+            //                 ),
+            //                 Icon(
+            //                   CupertinoIcons.cart,
+            //                   color: Colors.red,
+            //                   size: 26,
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //         ],
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

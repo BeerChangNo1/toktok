@@ -35,7 +35,7 @@ class poppularwidget extends StatelessWidget {
                   children: [
                     Container(
                       child: Image.network(
-                        image_network().pizza,
+                        image_network().meatball,
                         height: 130,
                         // width: 50,
                       ),
@@ -103,7 +103,7 @@ class poppularwidget extends StatelessWidget {
                   children: [
                     Container(
                       child: Image.network(
-                        image_network().berger,
+                        image_network().snack,
                         height: 130,
                         // width: 50,
                       ),
@@ -171,7 +171,7 @@ class poppularwidget extends StatelessWidget {
                   children: [
                     Container(
                       child: Image.network(
-                        image_network().salad,
+                        image_network().ice_creme,
                         height: 130,
                         // width: 50,
                       ),
@@ -239,7 +239,7 @@ class poppularwidget extends StatelessWidget {
                   children: [
                     Container(
                       child: Image.network(
-                        image_network().cola,
+                        image_network().noodles,
                         height: 130,
                         // width: 50,
                       ),

@@ -71,7 +71,7 @@ class _cartpageState extends State<cartpage> {
                           child: Row(
                             children: [
                               Image.network(
-                                image_network().berger,
+                                image_network().snack,
                                 height: 80,
                                 width: 150,
                               ),
@@ -159,7 +159,7 @@ class _cartpageState extends State<cartpage> {
                           child: Row(
                             children: [
                               Image.network(
-                                image_network().pizza,
+                                image_network().meatball,
                                 height: 80,
                                 width: 150,
                               ),
@@ -247,7 +247,7 @@ class _cartpageState extends State<cartpage> {
                           child: Row(
                             children: [
                               Image.network(
-                                image_network().cola,
+                                image_network().noodles,
                                 height: 80,
                                 width: 150,
                               ),

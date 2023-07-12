@@ -36,7 +36,7 @@ class itempage extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.all(16),
-                child: Image.network(image_network().pizza),
+                child: Image.network(image_network().noodles),
               ),
               Container(
                 // height: 26,

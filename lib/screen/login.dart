@@ -10,6 +10,8 @@ import 'package:toktok/addon/style.dart';
 import 'package:toktok/addon/text_form_Global.dart';
 import 'package:toktok/screen/register.dart';
 
+import '../authentication/authen.dart';
+
 class loginpage extends StatefulWidget {
   const loginpage({super.key});
 
@@ -23,7 +25,7 @@ class _loginpageState extends State<loginpage> {
   final formKey = GlobalKey<FormState>();
   bool isLoading = false;
   final Future<FirebaseApp> firebase = Firebase.initializeApp();
-
+  final AuthenticationService _authService = AuthenticationService();
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -143,6 +145,7 @@ class _loginpageState extends State<loginpage> {
                                         )
                                         .then((value) =>
                                             formKey.currentState!.reset());
+                                    await _authService.login();
                                     navigator!.pop();
                                     navigator!.pushNamed('/homepage');
                                     ScaffoldMessenger.of(context).showSnackBar(

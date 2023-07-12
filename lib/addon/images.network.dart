@@ -1,14 +1,13 @@
 class image_network {
-  var berger =
-      'https://freepngimg.com/thumb/junk_food/6-2-junk-food-png-clipart-thumb.png';
-  var pizza =
-      'https://www.transparentpng.com/thumb/pizza/hLgXMl-pizza-images-download.png';
-  var tarco =
-      'https://png.pngtree.com/png-clipart/20230411/ourmid/pngtree-chicken-salad-in-taco-shells-png-image_6700705.png';
-  var salad =
-      'https://www.pngkit.com/png/full/315-3158867_chicken-salad-with-transparent-background.png';
-  var cola =
-      'https://coastsupply.co/wp-content/uploads/2020/04/coca-cola-original-can-330ml.jpg';
-  var hotdog =
-      'https://freepngimg.com/thumb/junk_food/84935-days-variations-dog-banana-hot-bun-ketchup-thumb.png';
+  var snack =
+      'https://packagingcity.files.wordpress.com/2020/04/lays-packaging-city-rebrand-04.jpg';
+  var meatball = 'https://s.isanook.com/he/0/ud/5/27565/pork-ball.jpg';
+  var cha_nom =
+      'https://png.pngtree.com/png-clipart/20200710/ourmid/pngtree-pearl-milk-tea-dessert-drink-cup-png-image_2305355.jpg';
+  var ice_creme =
+      'https://png.pngtree.com/png-clipart/20220818/ourmid/pngtree-ice-cream-stick-png-image_6115690.png';
+  var noodles =
+      'https://www.pngplay.com/wp-content/uploads/7/Noodles-PNG-Photos.png';
+  // var hotdog =
+  //     'https://freepngimg.com/thumb/junk_food/84935-days-variations-dog-banana-hot-bun-ketchup-thumb.png';
 }
