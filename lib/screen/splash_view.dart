@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:toktok/addon/style.dart';
 import 'package:toktok/screen/cartpage.dart';
-import 'package:toktok/screen/hompage.dart';
 
 // import 'package:toktok/screen/login.dart';
 //ควยถอก

@@ -6,7 +6,6 @@ import 'package:toktok/screen/hompage.dart';
 import 'package:toktok/screen/item.page.dart';
 import 'package:toktok/screen/list.menu.dart';
 import 'package:toktok/screen/login.dart';
-import 'authentication/authen.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +17,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final AuthenticationService _authService = AuthenticationService();
   bool isLoggedIn = false;
 
   @override

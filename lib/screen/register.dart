@@ -5,11 +5,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:toktok/addon/appbar_global.dart';
-import 'package:toktok/addon/button_global.dart';
 import 'package:toktok/addon/social_login.dart';
 import 'package:toktok/addon/style.dart';
 import 'package:toktok/addon/text_form_Global.dart';
-import 'package:toktok/screen/login.dart';
 // import 'package:toktok/screen/login.dart';
 // import 'package:toktok/screen/register.dart';
 

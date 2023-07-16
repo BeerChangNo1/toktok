@@ -59,13 +59,15 @@ class _loginpageState extends State<loginpage> {
                           children: [
                             Container(
                               alignment: Alignment.center,
-                              child: const Text(
-                                'ร้านเตี๋ยวบ้าน',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontSize: 35,
-                                    fontWeight: FontWeight.bold),
-                              ),
+
+                              child: Image.asset('assets/images/มาม่า.jpg'),
+                              // child: const Text(
+                              //   'ร้านเตี๋ยวบ้าน',
+                              //   style: TextStyle(
+                              //       color: Colors.red,
+                              //       fontSize: 35,
+                              //       fontWeight: FontWeight.bold),
+                              // ),
                             ),
                             const SizedBox(
                               height: 80,

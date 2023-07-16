@@ -3,8 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
-import 'package:get/get.dart';
-import 'package:shimmer/shimmer.dart';
+
 // import 'package:get/get.dart';
 import 'package:toktok/addon/appbar_global.dart';
 import 'package:toktok/addon/categories.dart';
@@ -42,6 +41,7 @@ class _homepageState extends State<homepage> {
           body: ListView(
             children: [
               appbar(
+                icon: Icon(Icons.list_sharp),
                 advancedDrawerController: () {
                   log(12);
                   _advancedDrawerController.showDrawer();

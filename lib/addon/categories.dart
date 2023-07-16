@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:flutter_svg/svg.dart';
@@ -21,24 +19,48 @@ class categories extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   navigator!.pushNamed('/listmenu', arguments: {
-                    '1': 'เส้นใหญ่',
-                    '2': 'เส้นเล็ก',
-                    '3': 'เส้นหมี่',
-                    '4': 'วุ้นเส้น',
-                    '5': 'หมี่เหลือง',
-                    '6': 'มาม่า',
-                    'p1':
-                        'https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-gyudon-rice-png-image_2422725.jpg',
-                    'p2':
-                        'https://png.pngtree.com/png-vector/20201128/ourmid/pngtree-noodles-png-image_2423456.jpg',
-                    'p3':
-                        'https://e7.pngegg.com/pngimages/1003/302/png-clipart-noodle-noodle.png',
-                    'p4':
-                        'https://png.pngtree.com/png-vector/20201128/ourmid/pngtree-hot-and-sour-crystal-vermicelli-png-image_2450356.jpg',
-                    'p5':
-                        'https://png.pngtree.com/png-clipart/20230427/original/pngtree-delicious-transparent-noodle-food-png-image_9116812.png',
-                    'p6':
-                        'https://www.mama.co.th/imgadmins/img_product_cate/big/cate_big_ex20180409150918.jpg',
+                    '1': {
+                      'name': 'เส้นใหญ่',
+                      'image': 'assets/images/เส้นใหญ่.jpg',
+                      'total': '35',
+                      'detail': 'เส้นใหญ่เหนียวนุ่มชุ่มคอ',
+                      'time': '5',
+                    },
+                    '2': {
+                      'name': 'เส้นเล็ก',
+                      'image': 'assets/images/เส้นเล็ก.jpg',
+                      'total': '35',
+                      'detail': 'เส้นเล็กเหนียวนุ่มชุ่มคอ',
+                      'time': '7',
+                    },
+                    '3': {
+                      'name': 'เส้นหมี่',
+                      'image': 'assets/images/เส้นหมี่.png',
+                      'total': '35',
+                      'detail': 'เส้นหมี่เหนียวนุ่มชุ่มคอ',
+                      'time': '3',
+                    },
+                    '4': {
+                      'name': 'วุ้นเส้น',
+                      'image': 'assets/images/วุ้นเส้น.jpg',
+                      'total': '35',
+                      'detail': 'วุ้นเส้นเหนียวนุ่มชุ่มคอ',
+                      'time': '4',
+                    },
+                    '5': {
+                      'name': 'หมี่เหลือง',
+                      'image': 'assets/images/หมี่เหลือง.jpg',
+                      'total': '35',
+                      'detail': 'หมี่เหลืองเหนียวนุ่มชุ่มคอ',
+                      'time': '8',
+                    },
+                    '6': {
+                      'name': 'มาม่า',
+                      'image': 'assets/images/มาม่า.jpg',
+                      'total': '35',
+                      'detail': 'มาม่าเหนียวนุ่มชุ่มคอ',
+                      'time': '12',
+                    },
                   });
                   // print('object');
                 },
@@ -56,8 +78,8 @@ class categories extends StatelessWidget {
                                 blurRadius: 10,
                                 offset: Offset(0, 3))
                           ]),
-                      child: Image.network(
-                        image_network().noodles,
+                      child: Image.asset(
+                        'assets/images/ก๋วยเตี๋ยว.jpg',
                         height: 50,
                         width: 50,
                       ),
@@ -80,24 +102,21 @@ class categories extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   navigator!.pushNamed('/listmenu', arguments: {
-                    '1': 'ลูกชิ้นกุ้ง',
-                    '2': 'ลูกชิ้นหมู',
-                    '3': 'ลูกชิ้นปลา',
-                    '4': 'หมูห่อสาหร่าย',
-                    '5': 'ปูอัด',
-                    '6': 'ลูกชิ้นเนื่อ',
-                    'p1':
-                        'https://e7.pngegg.com/pngimages/1022/113/png-clipart-yong-tau-foo-fish-ball-meatball-tom-yum-thai-chilli-food-animals-thumbnail.png',
-                    'p2':
-                        'https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-farmhouse-lean-meatballs-png-image_2451921.jpg',
-                    'p3':
-                        'https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-hot-pot-ingredients-fish-balls-png-image_2431974.jpg',
-                    'p4':
-                        'https://s359.kapook.com/pagebuilder/afda7c77-fb13-42e8-81fd-882c5318ebdd.jpg',
-                    'p5':
-                        'https://e7.pngegg.com/pngimages/1016/502/png-clipart-hot-pot-barbecue-seafood-take-out-crab-pot-crab-stick-barbecue-png-material-thumbnail.png',
-                    'p6':
-                        'https://png.pngtree.com/png-vector/20211022/ourmid/pngtree-crab-stick-party-crab-meat-stick-kitchen-crab-willow-png-image_3986237.png',
+                    '1': {
+                      'name': 'ฮอทดอก',
+                      'image': 'assets/images/ฮอทดอก.jpg',
+                      'total': '5',
+                      'detail': 'ฮอทดอกนึ่งร้อนสดใหม่ทุกวัน',
+                      'time': '0',
+                    },
+                    '2': {
+                      'name': 'ลูกชิ้นหมู',
+                      'image': 'assets/images/ลูกชิ้นหมู.jpg',
+                      'total': '5',
+                      'detail':
+                          'ลูกชิ้นหมูนึ่งร้อนสดใหม่ทุกวันน้ำจิ้มก็อร้อยอร่อย',
+                      'time': '0',
+                    },
                   });
                 },
                 child: Column(
@@ -138,24 +157,62 @@ class categories extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   navigator!.pushNamed('/listmenu', arguments: {
-                    '1': 'ชาเขียว',
-                    '2': 'กาแฟ',
-                    '3': 'ชาเย็น',
-                    '4': 'นมเย็น',
-                    '5': 'โกโก้',
-                    '6': 'เผือก',
-                    'p1':
-                        'https://sainoms.com/wp-content/uploads/2019/04/%E0%B8%99%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7-%E0%B8%8A%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7.png',
-                    'p2':
-                        'https://img.lovepik.com/free-png/20211124/lovepik-coffee-png-image_401097948_wh1200.png',
-                    'p3':
-                        'https://www.gateauxhouse.co.th/images/ready-template/crop-1600679553124.png',
-                    'p4':
-                        'https://franchise.chakaimuk.com/upload-img/MENU1:1/resize_39900/1%E0%B8%95%E0%B9%88%E0%B8%AD1_%E0%B8%8A%E0%B8%B8%E0%B8%94_39900-1-37.jpg',
-                    'p5':
-                        'https://obs.line-scdn.net/r/ect/ect/image_165768273687243824619c99118t100a6220',
-                    'p6':
-                        'https://sainoms.com/wp-content/uploads/2019/04/%E0%B8%99%E0%B8%A1%E0%B9%80%E0%B8%9C%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%AB%E0%B8%AD%E0%B8%A1.png',
+                    '1': {
+                      'name': 'กาแฟเย็น',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'กาแฟเย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '5',
+                    },
+                    '2': {
+                      'name': 'ชาเขียว',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'ชาเขียวย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
+                    '3': {
+                      'name': 'ชาเย็น',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'ชาเย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
+                    '4': {
+                      'name': 'โกโก้เย็น',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'โกโก้เย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
+                    '5': {
+                      'name': 'เฉาก้วย',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'เฉาก้วยเย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
+                    '6': {
+                      'name': 'โอวัลติน',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'โอวัลตินเย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
+                    '7': {
+                      'name': 'นมเย็น',
+                      'image': 'assets/images/ชาทั้งหลาย.jpg',
+                      'total': '20',
+                      'detail':
+                          'นมเย็นชงสดใหม่เพิ่มน้ำตาลในเลือดเพื่อความสดชื่นในทุกวัน',
+                      'time': '7',
+                    },
                   });
                 },
                 child: Column(
@@ -172,8 +229,8 @@ class categories extends StatelessWidget {
                                 blurRadius: 10,
                                 offset: Offset(0, 3))
                           ]),
-                      child: Image.network(
-                        image_network().cha_nom,
+                      child: Image.asset(
+                        'assets/images/ชานม.jpg',
                         height: 50,
                         width: 50,
                       ),
@@ -191,72 +248,133 @@ class categories extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey.withOpacity((0.5)),
-                              spreadRadius: 2,
-                              blurRadius: 10,
-                              offset: Offset(0, 3))
-                        ]),
-                    child: Image.network(
-                      image_network().ice_creme,
-                      height: 50,
-                      width: 50,
+            InkWell(
+              onTap: () {
+                navigator!.pushNamed('/listmenu', arguments: {
+                  '1': {
+                    'name': 'แบบแท่ง',
+                    'image': 'assets/images/ไอศครีม.jpg',
+                    'total': '20',
+                    'detail': 'แท่ง อร่อยเย็นชื่นใจ',
+                    'time': '0',
+                  },
+                  '2': {
+                    'name': 'แบบโคลน',
+                    'image': 'assets/images/ไอศครีม.jpg',
+                    'total': '10',
+                    'detail': 'แบบโคลน อร่อยเย็นชื่นใจ',
+                    'time': '0',
+                  },
+                  '3': {
+                    'name': 'แบบถ้วย',
+                    'image': 'assets/images/ไอศครีม.jpg',
+                    'total': '30',
+                    'detail': 'แบบถ้วย อร่อยเย็นชื่นใจ',
+                    'time': '0',
+                  },
+                });
+              },
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey.withOpacity((0.5)),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: Offset(0, 3))
+                          ]),
+                      child: Image.asset(
+                        'assets/images/ไอศครีม.jpg',
+                        height: 50,
+                        width: 50,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    'ไอศครีม',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                    SizedBox(
+                      height: 5,
                     ),
-                  )
-                ],
+                    Text(
+                      'ไอศครีม',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey.withOpacity((0.5)),
-                              spreadRadius: 2,
-                              blurRadius: 10,
-                              offset: Offset(0, 3))
-                        ]),
-                    child: Image.network(
-                      image_network().snack,
-                      height: 50,
-                      width: 50,
+            InkWell(
+              onTap: () {
+                navigator!.pushNamed('/listmenu', arguments: {
+                  '1': {
+                    'name': 'เลย์ดั้งเดิม',
+                    'image': 'assets/images/เลย์ดั้งเดิม.jpg',
+                    'total': '20',
+                    'detail': 'ขนมขบเคี้ยวใว้กินหลังกินก๋วยเตี๋ยวอิ่ม',
+                    'time': '0',
+                  },
+                  '2': {
+                    'name': 'เลย์สาหร่าย',
+                    'image': 'assets/images/เลย์สาหร่าย.jpg',
+                    'total': '10',
+                    'detail': 'ขนมขบเคี้ยวใว้กินหลังกินก๋วยเตี๋ยวอิ่ม',
+                    'time': '0',
+                  },
+                  '3': {
+                    'name': 'เลย์หัวหอม',
+                    'image': 'assets/images/เลย์หัวหอม.jpg',
+                    'total': '30',
+                    'detail': 'ขนมขบเคี้ยวใว้กินหลังกินก๋วยเตี๋ยวอิ่ม',
+                    'time': '0',
+                  },
+                  '4': {
+                    'name': 'เลย์บาบีคิว',
+                    'image': 'assets/images/เลย์บาบีคิว.jpg',
+                    'total': '30',
+                    'detail': 'ขนมขบเคี้ยวใว้กินหลังกินก๋วยเตี๋ยวอิ่ม',
+                    'time': '0',
+                  },
+                });
+              },
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey.withOpacity((0.5)),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: Offset(0, 3))
+                          ]),
+                      child: Image.network(
+                        image_network().snack,
+                        height: 50,
+                        width: 50,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    'ขนม',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                    SizedBox(
+                      height: 5,
                     ),
-                  )
-                ],
+                    Text(
+                      'ขนม',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
