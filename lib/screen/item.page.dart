@@ -19,7 +19,6 @@ class itempage extends StatefulWidget {
 
 class _itempageState extends State<itempage> {
   int count = 1;
-  // double total = 0.0;
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +39,13 @@ class _itempageState extends State<itempage> {
           children: [
             appbar(
               icon: Icon(Icons.arrow_back),
-              advancedDrawerController: () {
+              ontaplaft: () {
                 navigator!.pop();
                 // _advancedDrawerController.showDrawer();
+              },
+              icon2: Icon(Icons.shopping_cart_outlined),
+              ontapright: () {
+                navigator!.pushNamed('/cartpage');
               },
             ),
             Padding(
@@ -80,8 +83,8 @@ class _itempageState extends State<itempage> {
                       onRatingUpdate: (index) {},
                     ),
                     Text(
-                      '$totalString บาท',
-                      style: TextStyle(
+                      '$totalString ฿',
+                      style: const TextStyle(
                           color: Colors.red,
                           fontSize: 18,
                           fontWeight: FontWeight.bold),
@@ -113,7 +116,7 @@ class _itempageState extends State<itempage> {
                   children: [
                     Text(
                       name,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
                           fontSize: 20),
@@ -243,6 +246,10 @@ class _itempageState extends State<itempage> {
         ),
       ),
       bottomNavigationBar: buttomBar(
+        onPress: () {
+          print(
+              'ส่งไปหน้าตะกล้า พร้อมกับ ค่า name = $name count = $count + total = $total');
+        },
         initialTotal: total,
         onCountUpdated: (newCount) {
           setState(() {

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:get/get.dart';
 import 'package:toktok/addon/appbar_global.dart';
 import 'package:toktok/addon/buttom.bar.dart';
 
@@ -40,15 +41,17 @@ class _cartpageState extends State<cartpage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     appbar(
-                      icon: Icon(Icons.list_sharp),
-                      advancedDrawerController: () {
-                        _advancedDrawerController.showDrawer();
+                      icon: Icon(Icons.arrow_back),
+                      ontaplaft: () {
+                        navigator!.pop();
+                        // _advancedDrawerController.showDrawer();
                       },
+                      ontapright: () {},
                     ),
                     const Padding(
                       padding: EdgeInsets.only(top: 20, left: 10, bottom: 10),
                       child: Text(
-                        'Order List',
+                        'ตะกร้า',
                         style: TextStyle(
                             fontSize: 30, fontWeight: FontWeight.bold),
                       ),

@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 class buttomBar extends StatefulWidget {
   final double initialTotal;
   final ValueChanged<int> onCountUpdated;
+  final onPress;
 
-  const buttomBar({
-    Key? key,
-    required this.initialTotal,
-    required this.onCountUpdated,
-  }) : super(key: key);
+  const buttomBar(
+      {Key? key,
+      required this.initialTotal,
+      required this.onCountUpdated,
+      this.onPress})
+      : super(key: key);
 
   @override
   _buttomBarState createState() => _buttomBarState();
@@ -58,7 +60,7 @@ class _buttomBarState extends State<buttomBar> {
           children: [
             Row(
               children: [
-                Text(
+                const Text(
                   'รวม:',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -66,17 +68,17 @@ class _buttomBarState extends State<buttomBar> {
                     fontSize: 20,
                   ),
                 ),
-                SizedBox(width: 15),
+                const SizedBox(width: 15),
                 Text(
                   total.toStringAsFixed(0),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.red,
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(width: 15),
-                Text(
+                const SizedBox(width: 15),
+                const Text(
                   'บาท',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -93,7 +95,7 @@ class _buttomBarState extends State<buttomBar> {
                   borderRadius: BorderRadius.circular(15.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: widget.onPress,
               child: const Text(
                 'หยิบใส่ตะกล้า',
                 style: TextStyle(

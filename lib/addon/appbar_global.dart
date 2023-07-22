@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 // import 'package:toktok/addon/style.dart';
 
 class appbar extends StatelessWidget {
-  const appbar({super.key, this.advancedDrawerController, this.icon});
+  const appbar(
+      {super.key,
+      required this.ontaplaft,
+      required this.ontapright,
+      this.icon,
+      this.icon2});
 
-  final advancedDrawerController;
+  final ontaplaft;
+  final ontapright;
   final icon;
+  final icon2;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +25,7 @@ class appbar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           InkWell(
-            onTap: advancedDrawerController,
+            onTap: ontaplaft,
             child: Container(
               padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -36,7 +44,7 @@ class appbar extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: ontapright,
             child: Container(
               padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -51,7 +59,7 @@ class appbar extends StatelessWidget {
                   )
                 ],
               ),
-              child: Icon(Icons.shopping_cart_outlined),
+              child: icon2,
             ),
           ),
           // InkWell(

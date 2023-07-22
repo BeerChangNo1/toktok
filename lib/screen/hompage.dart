@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
+import 'package:get/get.dart';
 
 // import 'package:get/get.dart';
 import 'package:toktok/addon/appbar_global.dart';
@@ -42,9 +43,13 @@ class _homepageState extends State<homepage> {
             children: [
               appbar(
                 icon: Icon(Icons.list_sharp),
-                advancedDrawerController: () {
+                ontaplaft: () {
                   log(12);
                   _advancedDrawerController.showDrawer();
+                },
+                icon2: Icon(Icons.shopping_cart_outlined),
+                ontapright: () {
+                  navigator!.pushNamed('/cartpage');
                 },
               ),
               //? ส่วนของ ฟิลค้นหา

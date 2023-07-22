@@ -15,7 +15,7 @@ class listmenu extends StatelessWidget {
         backgroundColor: Colors.white10,
         automaticallyImplyLeading: false,
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             InkWell(
               onTap: () {
@@ -42,7 +42,7 @@ class listmenu extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: EdgeInsets.only(/* top: 20,*/ left: 80),
               child: Text(
                 'รายการอาหาร',
                 style: TextStyle(
@@ -52,28 +52,28 @@ class listmenu extends StatelessWidget {
                 ),
               ),
             ),
-            InkWell(
-              onTap: () {},
-              child: Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: const Icon(
-                  Icons.notifications_sharp,
-                  color: Colors.black,
-                ),
-              ),
-            ),
+            // InkWell(
+            //   onTap: () {},
+            //   child: Container(
+            //     padding: const EdgeInsets.all(8),
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(20),
+            //       boxShadow: [
+            //         BoxShadow(
+            //           color: Colors.grey.withOpacity(0.5),
+            //           spreadRadius: 2,
+            //           blurRadius: 10,
+            //           offset: Offset(0, 3),
+            //         )
+            //       ],
+            //     ),
+            //     child: const Icon(
+            //       Icons.notifications_sharp,
+            //       color: Colors.black,
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

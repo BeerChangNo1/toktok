@@ -65,7 +65,7 @@ class drawer extends StatelessWidget {
                 ),
                 ListTile(
                   onTap: () {
-                    navigator!.pop();
+                    // navigator!.pop();
 
                     navigator?.pushNamed('/cartpage');
                   },
